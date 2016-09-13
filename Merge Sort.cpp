@@ -27,12 +27,12 @@ void merge(int vetor[], int tamanho, int esquerda, int meio, int direita){
 		k++;
 	}
 	while(i <= meio){
-		temp[k] = temp[i];
+		vetor[k] = temp[i];
 		k++;
 		i++;
 	}
 	while(j <= direita){
-		temp[k] = temp[j];
+		vetor[k] = temp[j];
 		k++;
 		j++;
 	}
@@ -40,7 +40,7 @@ void merge(int vetor[], int tamanho, int esquerda, int meio, int direita){
 
 void intercalar(int vetor[], int tamanho, int esquerda, int direita){
 	
-if(esquerda < direita){
+	if(esquerda < direita){
 		int meio = (esquerda + direita)/2;
 		intercalar(vetor, tamanho, esquerda, meio);
 		intercalar(vetor, tamanho, meio+1, direita);
