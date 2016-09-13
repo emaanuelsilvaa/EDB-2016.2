@@ -37,7 +37,20 @@ void merge(int vetor[], int tamanho, int esquerda, int meio, int direita){
 		j++;
 	}
 }
-
+/** -----------------------------------------------------------
+* Dado um vetor de tamanho n, após a execução desta função,
+* os elementos do vetor estarão ordenados em ordem crescente.
+*
+* @param	vetor 
+* @param	tamanho ( informa o tamanho do vetor)
+* @param	esquerda (indica o inicio do vetor)
+* @param	direita (indica o fim do vetor)
+* 
+* 
+* @pre tamanho > 0
+* @post para cada elemento v[i] em 'vetor', será verdadeiro
+* que v[i] <= v[i+1].
+*/
 void intercalar(int vetor[], int tamanho, int esquerda, int direita){
 	
 	if(esquerda < direita){
@@ -47,16 +60,7 @@ void intercalar(int vetor[], int tamanho, int esquerda, int direita){
 		merge(vetor, tamanho, esquerda, meio, direita);
 	}
 } 
-/** -----------------------------------------------------------
-* Dado um vetor de tamanho n, após a execução desta função,
-* os elementos do vetor estarão ordenados em ordem crescente.
-*
-* @param	v - uma struct contendo um vetor e seu tamanho
-*
-* @pre v.tam > 0
-* @post para cada elemento v[i] em 'v.elementos', será verdadeiro
-* que v[i] < v[i+1].
-*/
+
 int main (int argc, char** argv){
 
 	srand(time(NULL));
