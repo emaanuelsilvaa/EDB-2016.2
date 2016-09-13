@@ -16,7 +16,7 @@ struct vetor{
 *
 * @pre v.tam > 0
 * @post para cada elemento v[i] em 'v.elementos', será verdadeiro
-* que v[i] < v[i+1].
+* que v[i] <= v[i+1].
 */
 void buble_sort(vetor v){
 	
