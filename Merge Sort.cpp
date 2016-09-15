@@ -79,7 +79,7 @@ int main (int argc, char** argv){
 		elementos[i] = rand() % faixa;
 		cout << elementos[i] << " ";
 	}
-	cout << endl << "Deseja ordenar o vetor com o algoritmo INSERTION_SORT ?  [S/N]" << endl;
+	cout << endl << "Deseja ordenar o vetor com o algoritmo MERGE_SORT ?  [S/N]" << endl;
 	cin >> opcao;
 
 	opcao = toupper(opcao);
