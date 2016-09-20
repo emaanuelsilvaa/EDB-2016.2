@@ -2,6 +2,22 @@
 
 using namespace std;
 
+
+/** -----------------------------------------------------------
+* Dado um vetor de tamanho n, após a execução desta função,
+* os elementos do vetor estarão ordenados em ordem crescente.
+*
+* @param	vetor 
+* @param	tamanho ( informa o tamanho do vetor)
+* @param	inicio_vetor (indica o inicio do vetor)
+* @param	fim_vetor (indica o fim do vetor)
+* 
+* 
+* @pre tamanho > 0
+* @post para cada elemento v[i] em 'vetor', será verdadeiro
+* que v[i] <= v[i+1].
+*/
+
 void quick_sort(int vetor[], int inicio_vetor,int fim_vetor)
 {
 	int i, j, pivo, aux;
@@ -44,11 +60,12 @@ int main (int argc, char** argv){
 
 	int n, tam, faixa;	
 	char opcao;
+	int* elementos;
 	
 
 	cout << "digite o tamanho do vetor : " << endl;
 	cin >> tam;
-	int elementos[tam];
+	elementos = new (nothrow) int[tam];
 	cout << "Digite a faixa de numeros aleatorios a ser colocados no vetor" << endl;
 	cin >> faixa;
 
@@ -75,8 +92,9 @@ int main (int argc, char** argv){
 
 		cout << elementos[i]<<" ";
 
-	}	cout << endl;		
+	}
+	delete [] elementos;
+	cout << endl;		
 }
-
 
 
