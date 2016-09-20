@@ -50,6 +50,18 @@ void buble_sort(vetor v){
 
 //-------------------------------------------------------------------
 
+/** -----------------------------------------------------------
+* Dado um vetor de tamanho n, e a faixa de numero aleatorios a ser
+* colocados no vetor, após a execução desta função,
+* os elementos do vetor estarão ordenados em ordem crescente.
+*
+* 
+*
+* @pre faixa > 0 
+* @post para cada elemento v[i] em 'v.elementos', será verdadeiro
+* que v[i] <= v[i+1].
+*/
+
 int main (int argc, char** argv){
 
 	srand(time(NULL));
